@@ -40,6 +40,6 @@ run_analysis <- function(){
      
      finalData<-combinedData %>% group_by(Subject,Activity) %>% summarise_each(funs(mean(.,na.rm = TRUE)),-Subject,Activity)
      
-     write.table(finalData,file = "./cleanedData.txt")
+     write.table(finalData,file = "./cleanedData.txt",row.names = FALSE)
      return(finalData)
 }
