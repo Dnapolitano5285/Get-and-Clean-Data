@@ -8,6 +8,6 @@ can use "./cleanedData.txt" if you have placed the files in your current working
 
 the script uses the dplyr package, but initializes it when it runs. If you do not have this package installed it may cause an error. It can be installed with:
 
-install.package("dplyr")
+install.packages("dplyr")
 
 An explanation of choices regarding cleaning of data and how the script works can be found in the attached code book. 
